@@ -18,4 +18,6 @@ public class Board {
     public void addPiece(int playerNumber, int x, int y){
         table[x][y] = playerNumber;
     }
+
+
 }

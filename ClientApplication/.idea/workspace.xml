@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="421a2759-7a49-4751-bb1f-e1320e9da4ef" name="Default Changelist" comment="" />
+    <list default="true" id="421a2759-7a49-4751-bb1f-e1320e9da4ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/GameClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/GameClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/src/main/java/game/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/game/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/src/main/java/game/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/game/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/src/main/java/game/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/game/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/src/main/java/gameComponents/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/gameComponents/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/target/classes/game/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/target/classes/game/ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/target/classes/game/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/target/classes/game/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerApplication/target/classes/game/GameServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerApplication/target/classes/game/GameServer.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,16 +26,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/game/GameClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="126">
+              <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="675" />
     <option name="y" value="-8" />
     <option name="width" value="699" />
@@ -87,6 +101,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,11 +140,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ServerApplication" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -184,9 +199,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="675" y="-8" width="699" height="744" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120272316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07981221" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -195,7 +210,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47135842" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46972176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,8 +260,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/game/GameClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="126">
+          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

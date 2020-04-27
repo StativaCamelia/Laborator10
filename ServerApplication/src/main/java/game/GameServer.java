@@ -1,8 +1,11 @@
 package game;
 
 import gameComponents.Game;
+import gameComponents.Player;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -12,9 +15,35 @@ public class GameServer {
 
     public static final int PORT = 8100;
     public boolean stopServer = false;
-    List<Game> availableGames = new ArrayList<Game>();
-    List<ClientThread> clients = new ArrayList<ClientThread>();
 
+    private String username;
+
+    List<Game> availableGames = new ArrayList<Game>();
+    List<ClientThread> players = new ArrayList<ClientThread>();
+
+
+
+    public GameServer() throws IOException {
+        ServerSocket serverSocket = null;
+        try {
+            serverSocket = new ServerSocket(PORT);
+
+            while (true) {
+                System.out.println ("Waiting for a client ...");
+                Socket socket = serverSocket.accept();
+                ClientThread newClient = new ClientThread(socket, this);
+                players.add(newClient);
+                newClient.start();
+                if(this.stopServer){
+                    break;
+                }
+            }
+        } catch (IOException e) {
+            System.err.println ("Eroare" + e);
+        } finally {
+            serverSocket.close();
+        }
+    }
 
     public List<Game> getAvailableGames() {
         return availableGames;
@@ -33,36 +62,15 @@ public class GameServer {
     }
 
 
-    public GameServer() throws IOException {
-        ServerSocket serverSocket = null;
-        try {
-            serverSocket = new ServerSocket(PORT);
-
-            while (true) {
-                System.out.println ("Waiting for a client ...");
-                Socket socket = serverSocket.accept();
-
-                ClientThread newClient = new ClientThread(socket, this);
-                this.clients.add(newClient);
-                newClient.start();
-
-                if(this.stopServer){
-                    break;
-                }
-            }
-        } catch (IOException e) {
-            System.err.println ("Eroare" + e);
-        } finally {
-            serverSocket.close();
-        }
-    }
-
     public List<ClientThread> getClients() {
-        return clients;
+        return players;
     }
 
+    public void addPlayer(ClientThread newPlayer){
+        this.players.add(newPlayer);
+    }
     public void setClients(List<ClientThread> clients) {
-        this.clients = clients;
+        this.players = clients;
     }
 
     public static void main (String [] args ) throws IOException {
@@ -75,5 +83,13 @@ public class GameServer {
 
     public void setStopServer(boolean stopServer) {
         this.stopServer = stopServer;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getUsername() {
+        return username;
     }
 }
