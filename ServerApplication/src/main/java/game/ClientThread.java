@@ -81,7 +81,7 @@ class ClientThread extends Thread {
                     case MOVE: {
                         int x = Integer.parseInt(reqSplited[1]);
                         int y = Integer.parseInt(reqSplited[2]);
-                        raspuns = gameController.moveController(this.inAGame, actualGame, x, y, username);
+                        raspuns = gameController.moveController(this, this.inAGame, actualGame, x, y, username);
                         break;
                     }
                     case STOP : {

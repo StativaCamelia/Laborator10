@@ -49,11 +49,6 @@ public class GameClient {
                 out.println(command);
                 String response = in.readLine ();
                 System.out.println(response);
-                if(response.startsWith("[GAME]")){
-                    printMatrix();
-                }
-
-
             }
         } catch (UnknownHostException e) {
             System.err.println("No server listening... " + e);
@@ -80,6 +75,5 @@ public class GameClient {
             }
         }
         System.out.println(str);
-        System.out.println("Este randul tau");
     }
 }
